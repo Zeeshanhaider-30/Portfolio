@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zeeshan Haider | Data Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --accent: #10b981;
+        }
+
+        /* Emerald Accent for Data/Growth */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .data-card {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .data-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #10b981, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="fixed top-0 z-50 w-full border-b border-white/5 bg-slate-950/90 backdrop-blur-md">
+        <nav class="container mx-auto flex items-center justify-between px-6 py-4">
+            <div class="mono text-lg font-bold tracking-tighter">ZEESHAN_HAIDER<span class="animate-pulse">_</span>
+            </div>
+            <ul class="hidden gap-8 text-xs font-medium uppercase tracking-widest text-slate-400 md:flex">
+                <li><a href="#stats" class="hover:text-emerald-400 transition">Metrics</a></li>
+                <li><a href="#projects" class="hover:text-emerald-400 transition">Case Studies</a></li>
+                <li><a href="#stack" class="hover:text-emerald-400 transition">Stack</a></li>
+                <li><a href="https://drive.google.com/file/d/1hoeXChVzWYeBov5hadz3NP8RekKT5YCr/view?usp=drivesdk"
+                        class="text-emerald-400 border border-emerald-400/20 px-3 py-1 rounded">Resume.pdf</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pt-40 pb-20 px-6">
+            <div class="container mx-auto max-w-5xl">
+                <p class="mono text-emerald-400 mb-4 tracking-widest text-sm uppercase">// Statistical Problem Solver
+                </p>
+                <h1 class="text-6xl font-extrabold mb-8 md:text-8xl tracking-tight">
+                    Turning <span class="gradient-text">Noise</span> into <br />Knowledge.
+                </h1>
+                <p class="max-w-2xl text-xl text-slate-400 leading-relaxed">
+                    CS Student at KFUEIT specializing in <strong>Exploratory Data Analysis (EDA)</strong> and
+                    <strong>Predictive Modeling</strong>. I build data pipelines that uncover actionable insights.
+                </p>
+            </div>
+        </section>
+
+        <section id="stats" class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+                <div class="data-card p-8 rounded-2xl">
+                    <p class="text-slate-500 text-xs font-bold uppercase mb-2">Primary Toolset</p>
+                    <h3 class="text-2xl font-bold">Python / SQL</h3>
+                    <div class="w-full bg-slate-800 h-1.5 mt-4 rounded-full">
+                        <div class="bg-emerald-500 h-full w-[90%] rounded-full"></div>
+                    </div>
+                </div>
+                <div class="data-card p-8 rounded-2xl">
+                    <p class="text-slate-500 text-xs font-bold uppercase mb-2">Projects Completed</p>
+                    <h3 class="text-4xl font-black italic">12+</h3>
+                    <p class="text-slate-400 text-sm mt-2">End-to-end analytics pipelines.</p>
+                </div>
+                <div class="data-card p-8 rounded-2xl">
+                    <p class="text-slate-500 text-xs font-bold uppercase mb-2">Domain Focus</p>
+                    <h3 class="text-2xl font-bold">Sports & Retail</h3>
+                    <p class="text-slate-400 text-sm mt-2">Niche optimization expertise.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-24 px-6 container mx-auto">
+            <h2 class="text-3xl font-bold mb-16 flex items-center gap-4 uppercase tracking-tighter">
+                <span class="h-px w-12 bg-emerald-500"></span> Technical Case Studies
+            </h2>
+
+            <div class="space-y-12">
+                <div class="data-card rounded-3xl overflow-hidden grid md:grid-cols-2">
+                    <div class="p-10 flex flex-col justify-center">
+                        <div class="flex gap-2 mb-6">
+                            <span
+                                class="bg-emerald-500/10 text-emerald-400 px-3 py-1 rounded-full text-[10px] font-bold border border-emerald-500/20 uppercase">Machine
+                                Learning</span>
+                            <span
+                                class="bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full text-[10px] font-bold border border-blue-500/20 uppercase">Pandas</span>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">EDA PERFORMED ON ASIACUP DATASET</h3>
+                        <p class="text-slate-400 mb-6 leading-relaxed text-sm">
+                            Implemented Python Libraries to evaluate player performance trends. Automated the cleaning
+                            of asia cup matches data to identify high-potential batting performances.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/Zeeshanhaider-30/asiacupdatasetanalytics.git"
+                                class="text-emerald-400 font-bold border-b-2 border-emerald-400/20 hover:border-emerald-400 pb-1 text-sm transition">View
+                                Jupyter Notebook</a>
+                            <a href="https://github.com/Zeeshanhaider-30/asiacupdatasetanalytics.git"
+                                class="text-slate-500 font-bold border-b-2 border-transparent hover:border-slate-500 pb-1 text-sm transition">Read
+                                Full Report</a>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800/50 p-10 flex items-center justify-center border-l border-white/5">
+                        <div
+                            class="w-full aspect-video rounded-xl bg-slate-900 border border-white/5 shadow-2xl flex flex-col p-4 space-y-2">
+
+                            <div class="project-section">
+                                <h3>Asia Cup Performance Analysis</h3>
+                                <img src="images/pic.png" alt="top 10 scorers" style="width:100%; max-width:600px;">
+                                <p>Top 10 scorers</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div> <br>
+            <div class="data-card rounded-3xl overflow-hidden grid md:grid-cols-2">
+                <div
+                    class="bg-slate-800/50 p-10 flex items-center justify-center border-r border-white/5 order-2 md:order-1">
+                    <div
+                        class="w-full aspect-video rounded-xl bg-slate-900 border border-white/5 shadow-2xl relative overflow-hidden p-6">
+                        <div class="grid grid-cols-7 gap-1 h-full opacity-60">
+
+                        </div>
+                        <p class="absolute bottom-4 left-6 mono text-[10px] text-emerald-400"><img
+                                src="images/image.png" alt="heatmap"> </p>
+                    </div>
+                </div>
+
+                <div class="p-10 flex flex-col justify-center order-1 md:order-2">
+                    <div class="flex gap-2 mb-6">
+                        <span
+                            class="bg-purple-500/10 text-purple-400 px-3 py-1 rounded-full text-[10px] font-bold border border-purple-500/20 uppercase">Matplotlib</span>
+                        <span
+                            class="bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full text-[10px] font-bold border border-blue-500/20 uppercase">Seaborn</span>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4">Sales Dataset Analysis </h3>
+                    <p class="text-slate-400 mb-6 leading-relaxed text-sm">
+                        Despite various missing values and data inconsistencies, the project utilized advanced data
+                        cleaning and visualization techniques to generate actionable business insights.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/Zeeshanhaider-30/Sales_Dataset_analysis.git"
+                            class="text-emerald-400 font-bold border-b-2 border-emerald-400/20 hover:border-emerald-400 pb-1 text-sm transition">View
+                            Jupyter Notebook</a>
+                        <a href="https://github.com/Zeeshanhaider-30/Sales_Dataset_analysis.git"
+                            class="text-slate-500 font-bold border-b-2 border-transparent hover:border-slate-500 pb-1 text-sm transition">Read
+                            Full Report</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stack" class="py-24 bg-slate-900/30 border-y border-white/5">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                    <div>
+                        <h4 class="mono text-emerald-400 text-sm mb-4 tracking-tighter">DATA_WRANGLING</h4>
+                        <ul class="space-y-2 text-slate-400 text-sm">
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>Missing Value Imputation</li>
+                            <li>Feature Engineering</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="mono text-emerald-400 text-sm mb-4 tracking-tighter">VISUALIZATION</h4>
+                        <ul class="space-y-2 text-slate-400 text-sm">
+                            <li>Matplotlib</li>
+                            <li>Seaborn</li>
+                            <li>Plotly Dash</li>
+                            <li>Interactive Reports</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="mono text-emerald-400 text-sm mb-4 tracking-tighter">MODELING</h4>
+                        <ul class="space-y-2 text-slate-400 text-sm">
+                            <li>Linear Regression</li>
+                            <li>Random Forest</li>
+                            <li>K-Means Clustering</li>
+                            <li>Scikit-Learn</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="mono text-emerald-400 text-sm mb-4 tracking-tighter">TOOLS</h4>
+                        <ul class="space-y-2 text-slate-400 text-sm">
+                            <li>Jupyter Notebook</li>
+                            <li>Git/GitHub</li>
+                            <li>PostgreSQL</li>
+                            <li>TensorFlow</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-24 text-center">
+            <h2 class="text-4xl font-black mb-6">Want to analyze your data?</h2>
+            <a href="https://wa.me/923176500729?text=Hello%20Zeeshan,%20I%20saw%20your%20data%20analysis%20portfolio%20and%20would%20like%20to%20consult%20with%20you"
+                class="text-xl mono text-emerald-400 hover:bg-emerald-400 hover:text-slate-950 px-6 py-3 rounded-full border border-emerald-400 transition">REQUEST_CONSULTATION</a>
+            <div class="mt-20 text-slate-600 text-xs tracking-widest uppercase">
+                &copy; 2026 Zeeshan Haider // Liaquatpur, PK
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
